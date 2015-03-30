@@ -1,2 +1,2 @@
 # vamp-pulse-api
-Pulse rest-api specification and a client + means of JSON serialisation 
+Pulse rest-api specification and means of JSON serialisation
