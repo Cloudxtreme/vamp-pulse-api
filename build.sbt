@@ -37,13 +37,6 @@ val json4sV = "3.2.11"
 
 
 
-//resolvers ++= Seq(
-//  "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/",
-//  "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases",
-//  "spray repo" at "http://repo.spray.io",
-//  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
-//  Resolver.mavenLocal
-//)
 
 
 libraryDependencies ++= Seq(
