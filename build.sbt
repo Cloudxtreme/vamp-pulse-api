@@ -1,3 +1,5 @@
+
+
 organization := "io.vamp"
 
 name := """pulse-api"""
@@ -37,8 +39,6 @@ val json4sV = "3.2.11"
 
 
 
-
-
 libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-core" % json4sV,
   "org.json4s" %% "json4s-ext" % json4sV,
@@ -47,8 +47,8 @@ libraryDependencies ++= Seq(
 
 bintrayPublishSettings
 
-bintray.Keys.repository in bintray.Keys.bintray := "sbt-plugins"
+bintray.Keys.repository in bintray.Keys.bintray := "vamp"
 
 licenses  += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
 
-bintray.Keys.bintrayOrganization in bintray.Keys.bintray := None
+bintray.Keys.bintrayOrganization in bintray.Keys.bintray := Some("magnetic-io")

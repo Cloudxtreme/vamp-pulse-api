@@ -11,7 +11,8 @@ script:
 after_success:
 - test "${TRAVIS_PULL_REQUEST}" = 'false' &&
   test "${TRAVIS_JDK_VERSION}" = 'oraclejdk8' &&
-  sbt 'set credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", System.getenv("SONATYPE_USER"), System.getenv("SONATYPE_PASS"))' publish
+  sh "$TRAVIS_BUILD_DIR/.travis-ci-bintray-credentials.sh" &&
+  sbt 'set version := version.value + "." + System.getenv("TRAVIS_BUILD_NUMBER")' publish
 
 
 notifications:
