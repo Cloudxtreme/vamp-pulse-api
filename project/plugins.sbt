@@ -18,6 +18,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.3")
 // Add the following to have Git manage your build versions
 resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.6.4")
+addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.8.0")
 
 //addSbtPlugin("com.github.gseitz" % "sbt-release" % "0.8.4")
