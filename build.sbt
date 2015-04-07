@@ -44,3 +44,11 @@ libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-ext" % json4sV,
   "org.json4s" %% "json4s-native" % json4sV
 )
+
+bintrayPublishSettings
+
+bintray.Keys.repository in bintray.Keys.bintray := "sbt-plugins"
+
+licenses  += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
+
+bintray.Keys.bintrayOrganization in bintray.Keys.bintray := None
