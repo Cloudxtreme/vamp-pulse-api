@@ -14,12 +14,6 @@ description := """Pulse api case classes and serializers"""
 
 
 pomExtra := (<url>http://vamp.io</url>
-    <licenses>
-      <license>
-        <name>The Apache License, Version 2.0</name>
-        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      </license>
-    </licenses>
     <developers>
       <developer>
         <name>Roman Useinov</name>
